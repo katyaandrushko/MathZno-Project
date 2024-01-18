@@ -40,7 +40,7 @@ const infoData = [
 
 const qualificationData = [
    {
-      title: 'education',
+      title: 'освіта',
       data: [
          {
             university: 'КПІ',
@@ -60,7 +60,7 @@ const qualificationData = [
       ],
    },
    {
-      title: 'experience',
+      title: 'досвід',
       data: [
          {
             company: 'Розумскул',
@@ -123,15 +123,15 @@ const About = () => {
       return arr.find((item) => item.title === title)
    }
    return (
-      <section className="xl:h-[860px] pb-12 xl:py-24">
+      <section className="mt-[500px] xl:mt-[10px] xl:h-[860px] pb-12 xl:py-24">
          <div className="container mx-auto ">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
                Про мене
             </h2>
-            <div className="flex  flex-col xl:flex-row">
-               <div className="hidden xl:flex flex-1 relative">
+            <div className=" flex flex-col xl:flex-row ">
+               <div className="hidden xl:flex flex-1 relative ">
                   <DevImg
-                     containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[504px] h-[495px] bg-no-repeat relative"
+                     containerStyles="flex justify-center items-center bg-about_shape_light dark:bg-about_shape_dark w-[554px] h-[495px] bg-no-repeat relative"
                      imgSrc="/about/developer.png"
                   />
                </div>
@@ -149,7 +149,7 @@ const About = () => {
                            value="qualifications"
                            className="w-[162px] xl:w-auto"
                         >
-                           Освіта
+                           Досвід
                         </TabsTrigger>
                         <TabsTrigger
                            value="skills"
@@ -175,7 +175,7 @@ const About = () => {
                               </p>
 
                               {/* ICONS */}
-                              <div className="grid xl:grid-cols-2 gap-4 mb-12">
+                              {/* <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                  {infoData.map((item, index) => {
                                     return (
                                        <div
@@ -189,7 +189,7 @@ const About = () => {
                                        </div>
                                     )
                                  })}
-                              </div>
+                              </div> */}
                            </div>
                         </TabsContent>
 
@@ -205,7 +205,7 @@ const About = () => {
                                           {
                                              getData(
                                                 qualificationData,
-                                                'experience'
+                                                'досвід'
                                              ).title
                                           }
                                        </h4>
@@ -214,7 +214,7 @@ const About = () => {
                                     <div className="flex flex-col gap-y-8 ">
                                        {getData(
                                           qualificationData,
-                                          'experience'
+                                          'досвід'
                                        ).data.map((item, index) => {
                                           const { company, role, years } = item
                                           return (
@@ -242,7 +242,7 @@ const About = () => {
                                     </div>
                                  </div>
 
-                                 {/* education  */}
+                                 {/* освіта  */}
                                  <div className="flex flex-col gap-y-6">
                                     <div className="flex gap-x-4 items-center text-[22px] text-primary">
                                        <GraduationCapIcon size={28} />
@@ -250,7 +250,7 @@ const About = () => {
                                           {
                                              getData(
                                                 qualificationData,
-                                                'education'
+                                                'освіта'
                                              ).title
                                           }
                                        </h4>
@@ -259,7 +259,7 @@ const About = () => {
                                     <div className="flex flex-col gap-y-8 ">
                                        {getData(
                                           qualificationData,
-                                          'education'
+                                          'освіта'
                                        ).data.map((item, index) => {
                                           const {
                                              university,
@@ -294,16 +294,18 @@ const About = () => {
                            </div>
                         </TabsContent>
                         <TabsContent value="skills">
-                           <div className="text-center xl:text-left">
-                              <h3 className="h3 mb-8">Experience </h3>
+                           <div className="text-center  xl:text-left">
+                              <h3 className="h3 mb-8">Моє кредо </h3>
                               {/* sKIILS */}
                               <div className="mb-16">
-                                 <h4 className="text-xl font-semibold mb-2">
-                                    Skills
+                                 <h4 className="text-xl font-thin mb-2 text-center flex justify-center items-center xl:max-w-[70%] xl:text-left ">
+                                    Я, як ніхто інший розумію, що таке
+                                    готуватися з 0, саме тому впевнений, що
+                                    зможу допомогти кожному учню 😎
                                  </h4>
                                  <div className="border-b border-border mb-4"></div>
                                  {/* Skill List */}
-                                 <div>
+                                 {/* <div>
                                     {getData(skillData, 'skills').data.map(
                                        (item, index) => {
                                           const { name } = item
@@ -319,16 +321,16 @@ const About = () => {
                                           )
                                        }
                                     )}
-                                 </div>
+                                 </div> */}
                               </div>
 
                               {/* Tools */}
-                              <div>
+                              {/* <div>
                                  <h4 className="text-xl font-semibold mb-2 xl:text-left">
                                     Tools
                                  </h4>
                                  <div className="border-b border-border mb-4"></div>
-                                 {/* Tools List */}
+                           
                                  <div className="flex gap-x-8 justify-center xl:justify-start">
                                     {getData(skillData, 'tools').data.map(
                                        (item, index) => {
@@ -347,7 +349,7 @@ const About = () => {
                                        }
                                     )}
                                  </div>
-                              </div>
+                              </div> */}
                            </div>
                         </TabsContent>
                      </div>

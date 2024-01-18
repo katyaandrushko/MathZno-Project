@@ -9,8 +9,10 @@ const Contact = () => {
             <div className="grid xl:grid-cols-2 pt-12 xl:h-[480px] mb-6 xl:mb-24">
                {/* Text */}
 
-               <div className="flex flex-col justify-center">
-                  <h1 className="h1 max-w-md mb-8">Отримати пробний урок</h1>
+               <div className="flex flex-col justify-center ">
+                  <h1 className="h1 max-w-md mb-8">
+                     Отримати пробний безкоштовний урок
+                  </h1>
                   <p className="subtitle max-w-[400px]">
                      Залишайте заявку та наш менеджер звʼяжеться з вами протягом
                      15 хвилин, щоб дати доступ до безкоштовного заняття

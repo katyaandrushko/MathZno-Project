@@ -100,35 +100,48 @@
 'use client'
 import React from 'react'
 import { RiCheckboxMultipleFill } from 'react-icons/ri'
+import { FaGratipay } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
+import { SquarePen } from 'lucide-react'
+import { RxCheckCircled, RxCheckbox } from 'react-icons/rx'
 
 const borderedCardStyles = {
-   border: '2px solid #FF4500', // Замініть цей колір на той, який вам потрібен
+   border: '2px solid #E4871F', // Замініть цей колір на той, який вам потрібен
    borderRadius: '10px',
    padding: '10px',
-   boxShadow: '0px 0px 10px 2px #FF4500', // Тінь
+   boxShadow: '0px 0px 10px 2px #E4871F', // Тінь
 }
 
 const CheckboxItem = ({ label }) => (
    <li>
       <div className=" form-control flex ">
-         <label className="label justify-start items-start">
+         {/* <label className="label justify-start items-start">
             <input
                type="checkbox"
                className="checkbox checkbox-secondary checkbox-sm mr-2"
-               readOnly
             />
             <span className="label-text">{label}</span>
-         </label>
+         </label> */}
          {/* <div className="flex ">
             <RiCheckboxMultipleFill className="mr-2" size={20} />
             <span className="text">{label}</span>
          </div> */}
+         <li>
+            <div className="form-control flex">
+               <div className="flex">
+                  <RxCheckCircled
+                     className="mr-2"
+                     style={{ width: '20px', height: '20px' }}
+                  />
+                  <span className="text w-[200px]">{label}</span>
+               </div>
+            </div>
+         </li>
       </div>
    </li>
 )
 
-const Card = ({ title, price, features, link }) => (
+const Card = ({ title, price, features }) => (
    <div
       className=" card card-bordered bg-secondary/50 dark:bg-secondary/40 h-[70vh] mb-[60px]"
       style={title === 'Pro' ? borderedCardStyles : null}
@@ -136,7 +149,7 @@ const Card = ({ title, price, features, link }) => (
       <div className="flex flex-col h-full grow-0 p-12">
          <h2 className="card-title">{title}</h2>
          <p className="heading text-6xl text-left mb-0 pb-0">{price}</p>
-         <p className="text-zinc-400">Одне заняття</p>
+
          <ul className="mt-12 mb-8">
             {features.map((feature, index) => (
                <CheckboxItem key={index} label={feature} />
@@ -167,7 +180,7 @@ function PricingCard() {
       },
       {
          title: 'Pro',
-         price: '1900',
+         price: '1900₴',
          features: [
             ' 10-12 онлайн занять',
             'Записи занять',

@@ -30,7 +30,7 @@ const Hero = () => {
                      підтримкою куратора
                   </p>
                   {/* Button */}
-                  <div className="flex flex-col gap-y-4 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
+                  <div className="flex flex-col gap-y-4 md:flex-row  gap-x-3 mx-auto xl:mx-0 mb-12">
                      <Link href="/contact">
                         <Button className="gap-x-2">
                            Отримати безкоштовний урок <Send size={18} />{' '}
@@ -52,31 +52,31 @@ const Hero = () => {
                   <Badge
                      containerStyles="absolute top-[24%] -left-[5rem]"
                      icon={<RiBriefcase4Fill />}
-                     endCountNum={4}
-                     badgeText="years of Experience"
+                     endCountNum={5}
+                     badgeText="років досвіду"
                   />
 
                   {/* Badge 2 */}
                   <Badge
                      containerStyles="absolute top-[80%] -left-[1rem]"
                      icon={<RiTodoFill />}
-                     endCountNum={9}
-                     endCounttext="k"
-                     badgeText="Completeed Projects"
+                     endCountNum={80}
+                     endCounttext=""
+                     badgeText="учнів склали на 180+"
                   />
 
                   {/* Badge 3 */}
                   <Badge
                      containerStyles="absolute top-[55%] -right-8"
                      icon={<RiTeamFill />}
-                     endCountNum={12}
+                     endCountNum={2}
                      endCounttext="k"
-                     badgeText="Client Satisfied"
+                     badgeText="учнів підготував"
                   />
-                  <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[505px] bg-no-repeat absolute -top-1 -right-2 "></div>
+                  <div className="w-[200px] h-[350px] bg-hero_shape2_light dark:bg-hero_shape2_dark sm:w-[500px] sm:h-[505px] bg-no-repeat absolute -top-1 -right-2 "></div>
                   <DevImg
                      imgSrc="/about/developer.png"
-                     containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
+                     containerStyles="bg-hero_shape w-[250px] h-[360px] sm:w-[550px] sm:h-[462px] bg-no-repeat relative bg-bottom flex items-center justify-center "
                   />
                </div>
             </div>

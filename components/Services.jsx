@@ -1,4 +1,13 @@
-import { GanttChartSquare, Blocks, Gem } from 'lucide-react'
+import {
+   GanttChartSquare,
+   Blocks,
+   Gem,
+   BellDot,
+   BookOpenCheck,
+   ScrollIcon,
+   MessageCircleQuestion,
+   Speech,
+} from 'lucide-react'
 import {
    Card,
    CardContent,
@@ -9,40 +18,39 @@ import {
 
 const servicesData = [
    {
+      icon: <BookOpenCheck size={72} strokeWidth={0.8} />,
+      title: '12 занять на місяць',
+      description:
+         '12 онлайн занять на місяць по 1,5 години, де ми поступово пройдемо весь матеріал',
+   },
+   {
+      icon: <ScrollIcon size={72} strokeWidth={0.8} />,
+      title: 'Авторські матеріали',
+      description: 'Ілюстровані конспекти та робочі зошити до кожного заняття',
+   },
+   {
+      icon: <BellDot size={72} strokeWidth={0.8} />,
+      title: 'Записи всіх занять',
+      description:
+         'Займайся у будь-який зручний тобі час, адже записи будуть доступні до самого іспиту',
+   },
+   {
       icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-      title: 'UX Design',
+      title: 'Домашнє завдання після уроку',
       description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque laboriosam laudantium harum voluptates possimus ad nemo ea dolore recusandae suscipit unde, veritatis repudiandae ullam, vero omnis atque numquam iure!',
+         'Для закріплення матеріалу ви отримаєте домашні завдання з підказками та розв’язками',
    },
    {
-      icon: <Blocks size={72} strokeWidth={0.8} />,
-      title: 'UX Design',
+      icon: <MessageCircleQuestion size={72} strokeWidth={0.8} />,
+      title: 'Відеорозвʼязки найважчих завдань',
       description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque laboriosam laudantium harum voluptates possimus ad nemo ea dolore recusandae suscipit unde, veritatis repudiandae ullam, vero omnis atque numquam iure!',
+         'До найскладніших задач домашнього завдання ви отримаєте відеорозв’язки',
    },
    {
-      icon: <Gem size={72} strokeWidth={0.8} />,
-      title: 'UX Design',
+      icon: <Speech size={72} strokeWidth={0.8} />,
+      title: 'Особистий куратор',
       description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque laboriosam laudantium harum voluptates possimus ad nemo ea dolore recusandae suscipit unde, veritatis repudiandae ullam, vero omnis atque numquam iure!',
-   },
-   {
-      icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-      title: 'UX Design',
-      description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque laboriosam laudantium harum voluptates possimus ad nemo ea dolore recusandae suscipit unde, veritatis repudiandae ullam, vero omnis atque numquam iure!',
-   },
-   {
-      icon: <Blocks size={72} strokeWidth={0.8} />,
-      title: 'UX Design',
-      description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque laboriosam laudantium harum voluptates possimus ad nemo ea dolore recusandae suscipit unde, veritatis repudiandae ullam, vero omnis atque numquam iure!',
-   },
-   {
-      icon: <Gem size={72} strokeWidth={0.8} />,
-      title: 'UX Design',
-      description:
-         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloremque laboriosam laudantium harum voluptates possimus ad nemo ea dolore recusandae suscipit unde, veritatis repudiandae ullam, vero omnis atque numquam iure!',
+         'Людина, яка 24/7 на зв’язку, відповідає на всі питання та допомагає з практикою',
    },
 ]
 const Services = () => {
@@ -50,7 +58,7 @@ const Services = () => {
       <section className="mb-12 xl:mb-36">
          <div className="container mx-auto">
             <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
-               My Services
+               Про курс
             </h2>
             {/* Items  */}
             <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
