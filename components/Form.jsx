@@ -18,12 +18,12 @@ const Form = () => {
             <MailIcon className="absolute right-6" size={20} />
          </div>
          {/* textarea */}
-         <div className="relative flex items-center w-[80%]">
+         <div className="relative flex items-center w-[90%]">
             <Textarea
                type="name"
                id="name"
                placeholder="Напишіть тут, як з вами краще звʼязаися: зателефонувати чи написати на вайбер, або у вас уже є якісь питання"
-               className="pt-3 text-base pl-5"
+               className="pt-3 text-base pl-7 pr-[70px]"
             />
             <MessageSquare className="absolute top-4 right-6" size={20} />
          </div>
