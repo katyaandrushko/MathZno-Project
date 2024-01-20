@@ -12,14 +12,16 @@ const Tracker = () => {
       //       </p>
       //    </div>
       // </div>
-
-      // <div class="scroll text1 flex whitespace-nowrap">
-      //    <div class="pl-[40px] pr-[30px] pt-[7px] pb-[7px] text-black text-3xl bg-white whitespace-nowrap font-bold uppercase overflow-hidden animate-ticker">
-      //       <span>записатися на пробний урок 👉 заповнюй форму на сайті </span>
-      //       <span>записатися на пробний урок 👉 заповнюй форму на сайті</span>
-      //    </div>
-      // </div>
-      <div></div>
+      <div className="w-full overflow-hidden -webkit-sticky">
+         <div class=" scroll text1 flex whitespace-nowrap ">
+            <div class="pl-[40px] pr-[30px] pt-[7px] pb-[7px] text-black text-3xl bg-white whitespace-nowrap font-bold uppercase  animate-ticker">
+               <span>
+                  записатися на пробний урок 👉 заповнюй форму на сайті, і
+                  отримай безкоштовне заняття
+               </span>
+            </div>
+         </div>
+      </div>
    )
 }
 
