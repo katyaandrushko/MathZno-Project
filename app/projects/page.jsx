@@ -113,7 +113,7 @@ const borderedCardStyles = {
 }
 
 const CheckboxItem = ({ label }) => (
-   <li>
+   <>
       <div className=" form-control flex ">
          {/* <label className="label justify-start items-start">
             <input
@@ -138,7 +138,7 @@ const CheckboxItem = ({ label }) => (
             </div>
          </li>
       </div>
-   </li>
+   </>
 )
 
 const Card = ({ title, price, features }) => (

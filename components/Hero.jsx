@@ -13,7 +13,7 @@ import {
 
 const Hero = () => {
    return (
-      <section className="h-[44vh] py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+      <section className="h-[49vh] sm:h-[44vh] py-12 xl:py-24 xl:h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
          <div className="container mx-auto">
             <div className="flex flex-wrap-reverse xl:flex justify-between gap-x-8">
                {/* Text */}
@@ -50,7 +50,7 @@ const Hero = () => {
                <div className="pb-10 mx-auto xl:flex relative">
                   {/* Badge */}
                   <Badge
-                     containerStyles="absolute top-[24%] -left-[5rem]"
+                     containerStyles="absolute top-[5%] -left-[1rem] sm:absolute sm:top-[24%] sm:-left-[5rem]"
                      icon={<RiBriefcase4Fill />}
                      endCountNum={5}
                      badgeText="років досвіду"
@@ -58,7 +58,7 @@ const Hero = () => {
 
                   {/* Badge 2 */}
                   <Badge
-                     containerStyles="absolute top-[80%] -left-[1rem]"
+                     containerStyles="top-[70%] -left-[2rem] absolute sm:top-[80%] sm:-left-[1rem]"
                      icon={<RiTodoFill />}
                      endCountNum={80}
                      endCounttext=""
@@ -67,7 +67,7 @@ const Hero = () => {
 
                   {/* Badge 3 */}
                   <Badge
-                     containerStyles="absolute top-[55%] -right-8"
+                     containerStyles="top-[47%] -right-9 absolute sm:top-[55%] sm:-right-8"
                      icon={<RiTeamFill />}
                      endCountNum={2}
                      endCounttext="k"

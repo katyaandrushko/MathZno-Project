@@ -12,11 +12,11 @@ const Badge = ({
       <div className={`badge ${containerStyles}`}>
          <div className="text3xl text-primary"> {icon}</div>
          <div className="flex items-center gap-x-2">
-            <div className="text-4xl leading-none font-bold text-primary">
+            <div className="text-xl sm:text-4xl leading-none font-bold text-primary">
                <CountUp end={endCountNum} delay={1} duration={4} />
                {endCounttext}
             </div>
-            <div className=" w-[50px] xl:max-w-[70px] leading-none text-[15px] font-medium text-black">
+            <div className="text-[12px] w-full xl:max-w-[70px] leading-none sm:text-[15px] font-medium text-black">
                {badgeText}
             </div>
          </div>

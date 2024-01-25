@@ -123,12 +123,12 @@ const About = () => {
       return arr.find((item) => item.title === title)
    }
    return (
-      <section className="mt-[500px] xl:mt-[10px] xl:h-[860px] pb-12 xl:py-24">
-         <div className="container mx-auto ">
+      <section className="mt-[597px] sm:mt-[610px] xl:mt-[10px] xl:h-[840px] pb-12 xl:py-24">
+         <div className="container mx-auto">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
                Про мене
             </h2>
-            <div className=" flex flex-col xl:flex-row ">
+            <div className="flex flex-col items-center justify-center mx-auto xl:flex-row ">
                <div className="hidden xl:flex flex-1 relative ">
                   <DevImg
                      containerStyles="flex justify-center items-center bg-about_shape_light dark:bg-about_shape_dark w-[554px] h-[495px] bg-no-repeat relative"
@@ -136,12 +136,12 @@ const About = () => {
                   />
                </div>
                {/* Tabs */}
-               <div className="flex-1">
+               <div className="items-center flex ">
                   <Tabs defaultValue="personal">
-                     <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none ">
+                     <TabsList className="flex flex-col sm:w-[400px] sm:grid sm:grid-cols-2 xl:grid-cols-2 mx-auto xl:max-w-[520px] xl:border dark:border-none ">
                         <TabsTrigger
                            value="personal"
-                           className="w-[162px] xl:w-auto"
+                           className="w-[175px] xl:w-auto"
                         >
                            Особиста інформація
                         </TabsTrigger>
@@ -151,20 +151,20 @@ const About = () => {
                         >
                            Досвід
                         </TabsTrigger>
-                        <TabsTrigger
+                        {/* <TabsTrigger
                            value="skills"
                            className="w-[162px] xl:w-auto"
                         >
                            Чому я?
-                        </TabsTrigger>
+                        </TabsTrigger> */}
                      </TabsList>
 
                      {/* Tabs content */}
-                     <div className="text-lg mt-12 xl:mt-8">
+                     <div className="text-lg mt-12 flex justify-center mx-auto xl:mt-8 ">
                         <TabsContent value="personal">
                            <div className="text-center xl:text-left">
                               <h3 className="h3 mb-4">Про мене</h3>
-                              <p className="subtitle max-w-xl max-auto xl:mx-0">
+                              <div className="subtitle max-w-xl max-auto xl:mx-0">
                                  👨‍💻 Я вже 5 років готую учнів до ЗНО та НМТ з
                                  математики 🧑‍🏫 За спеціальністю я інженер,
                                  закінчив КПІ в 2021 році 💁‍♂ Сам я
@@ -172,7 +172,17 @@ const About = () => {
                                  після 2 балів на ДПА в 9 класі 🎉 За 5 років
                                  випустив більше 400 учнів, середній бал яких
                                  180+
-                              </p>
+                                 <p className="h3 mb-7 mt-7 text-black">
+                                    Моє кредо{' '}
+                                 </p>
+                                 <p className="subtitle">
+                                    Я, як ніхто інший розумію, що таке
+                                    готуватися з 0, саме тому впевнений, що
+                                    зможу допомогти кожному учню 😎
+                                 </p>
+                              </div>
+
+                              <div className="border-b border-border mb-4"></div>
 
                               {/* ICONS */}
                               {/* <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -291,65 +301,6 @@ const About = () => {
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                        </TabsContent>
-                        <TabsContent value="skills">
-                           <div className="text-center  xl:text-left">
-                              <h3 className="h3 mb-8">Моє кредо </h3>
-                              {/* sKIILS */}
-                              <div className="mb-16">
-                                 <h4 className="text-xl font-thin mb-2 text-center flex justify-center items-center xl:max-w-[70%] xl:text-left ">
-                                    Я, як ніхто інший розумію, що таке
-                                    готуватися з 0, саме тому впевнений, що
-                                    зможу допомогти кожному учню 😎
-                                 </h4>
-                                 <div className="border-b border-border mb-4"></div>
-                                 {/* Skill List */}
-                                 {/* <div>
-                                    {getData(skillData, 'skills').data.map(
-                                       (item, index) => {
-                                          const { name } = item
-                                          return (
-                                             <div
-                                                className="w-2/4 text-center xl:text-left mx-auto xl:mx-0"
-                                                key={index}
-                                             >
-                                                <div className="font-medium">
-                                                   {name}
-                                                </div>
-                                             </div>
-                                          )
-                                       }
-                                    )}
-                                 </div> */}
-                              </div>
-
-                              {/* Tools */}
-                              {/* <div>
-                                 <h4 className="text-xl font-semibold mb-2 xl:text-left">
-                                    Tools
-                                 </h4>
-                                 <div className="border-b border-border mb-4"></div>
-                           
-                                 <div className="flex gap-x-8 justify-center xl:justify-start">
-                                    {getData(skillData, 'tools').data.map(
-                                       (item, index) => {
-                                          const { imgPath } = item
-                                          return (
-                                             <div key={index}>
-                                                <Image
-                                                   src={imgPath}
-                                                   width={48}
-                                                   height={48}
-                                                   alt=""
-                                                   priority
-                                                />
-                                             </div>
-                                          )
-                                       }
-                                    )}
-                                 </div>
-                              </div> */}
                            </div>
                         </TabsContent>
                      </div>
