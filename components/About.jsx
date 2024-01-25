@@ -123,7 +123,7 @@ const About = () => {
       return arr.find((item) => item.title === title)
    }
    return (
-      <section className="mt-[657px] sm:mt-[850px] xl:mt-[10px] xl:h-[840px] pb-12 xl:py-24">
+      <section className="mt-[690px] sm:mt-[900px] xl:mt-[10px] xl:h-[840px] pb-12 xl:py-24">
          <div className="container mx-auto">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
                Про мене
@@ -172,7 +172,7 @@ const About = () => {
                                  після 2 балів на ДПА в 9 класі 🎉 За 5 років
                                  випустив більше 400 учнів, середній бал яких
                                  180+
-                                 <p className="h3 mb-7 mt-7 text-black">
+                                 <p className="h3 mb-7 mt-7 text-black dark:text-white">
                                     Моє кредо{' '}
                                  </p>
                                  <p className="subtitle">

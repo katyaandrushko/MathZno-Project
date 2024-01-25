@@ -5,30 +5,23 @@ import {
    RiGithubFill,
    RiFacebookBoxFill,
    RiInstagramFill,
+   RiTelegramFill,
 } from 'react-icons/ri'
 
 import Link from 'next/link'
 
 const icons = [
    {
-      path: '/',
+      path: 'https://www.youtube.com/@math_Alex_lenc?si=MUiNosL6KOstn1rX',
       name: <RiYoutubeFill />,
    },
    {
-      path: '/',
-      name: <RiLinkedinFill />,
+      path: 'https://t.me/multimatem',
+      name: <RiTelegramFill />,
    },
    {
-      path: '/',
-      name: <RiGithubFill />,
-   },
-   {
-      path: '/',
+      path: 'https://www.instagram.com/sanya.math?igshid=MWZjMTM2ODFkZg%3D%3D',
       name: <RiInstagramFill />,
-   },
-   {
-      path: '/',
-      name: <RiFacebookBoxFill />,
    },
 ]
 const Socials = ({ containerStyles, iconsStyles }) => {
