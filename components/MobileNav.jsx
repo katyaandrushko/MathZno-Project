@@ -3,6 +3,7 @@ import { AlignJustify } from 'lucide-react'
 import Nav from './Nav'
 import Logo from './Logo'
 import Socials from './Socials'
+import { useState } from 'react'
 
 const MobileNav = () => {
    return (

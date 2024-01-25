@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Tracker from './Tracker'
+import { useState } from 'react'
 
 const links = [
    {
@@ -10,19 +11,20 @@ const links = [
    },
    {
       path: '/projects',
-      name: 'Курси',
+      name: 'Ціни',
    },
    {
       path: '/contact',
       name: 'Контакти',
    },
-   {
-      path: '/free_lesson',
-      name: 'Безкоштовний урок',
-   },
+   // {
+   //    path: '/free_lesson',
+   //    name: 'Безкоштовний урок',
+   // },
 ]
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
    const path = usePathname()
+
    return (
       <nav className={`${containerStyles}`}>
          {links.map((link, index) => {
@@ -32,7 +34,6 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
                   key={index}
                   className={`capitalize ${linkStyles}`}
                >
-                  {' '}
                   {link.path === path && (
                      <motion.span
                         initial={{ y: '-100%' }}

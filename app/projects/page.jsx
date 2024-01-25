@@ -133,7 +133,7 @@ const CheckboxItem = ({ label }) => (
                      className="mr-2"
                      style={{ width: '20px', height: '20px' }}
                   />
-                  <span className="text w-[200px]">{label}</span>
+                  <span className="text w-[150px] sm:w-[200px]">{label}</span>
                </div>
             </div>
          </li>
@@ -143,10 +143,10 @@ const CheckboxItem = ({ label }) => (
 
 const Card = ({ title, price, features }) => (
    <div
-      className=" card card-bordered bg-secondary/50 dark:bg-secondary/40 h-[70vh] mb-[60px]"
+      className="card card-bordered bg-secondary/50 dark:bg-secondary/40 h-auto sm:h-[80vh] mb-[60px]"
       style={title === 'Pro' ? borderedCardStyles : null}
    >
-      <div className="flex flex-col h-full grow-0 p-12">
+      <div className="flex flex-col h-full grow-0 p-6 sm:p-12">
          <h2 className="card-title">{title}</h2>
          <p className="heading text-6xl text-left mb-0 pb-0">{price}</p>
 
@@ -155,8 +155,10 @@ const Card = ({ title, price, features }) => (
                <CheckboxItem key={index} label={feature} />
             ))}
          </ul>
-         <div className="flex items-center justify-center mt-auto ">
-            <Button>Спробувати пробний урок</Button>
+         <div className=" flex items-center justify-center sm:mt-auto ">
+            <Button className="text-[14px] sm:text-[20px]">
+               Спробувати пробний урок
+            </Button>
          </div>
       </div>
    </div>
@@ -213,7 +215,7 @@ function PricingCard() {
                Наші тарифи
             </h1>
          </div>
-         <div className=" container mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 gap-y-16 max-w-6xl ">
+         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 gap-y-16 max-w-6xl ">
             {pricingOptions.map((option, index) => (
                <Card key={index} {...option} />
             ))}
