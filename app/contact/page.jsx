@@ -1,4 +1,4 @@
-import Form from '@/components/Form.1'
+import Form from '@/components/Form'
 import { MailIcon, HomeIcon, PhoneCall } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 
