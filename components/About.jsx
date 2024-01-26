@@ -132,7 +132,7 @@ const About = () => {
                <div className="hidden xl:flex flex-1 relative ">
                   <DevImg
                      containerStyles="flex justify-center items-center bg-about_shape_light dark:bg-about_shape_dark w-[554px] h-[495px] bg-no-repeat relative"
-                     imgSrc="/about/developer.png"
+                     imgSrc="./about/developer.png"
                   />
                </div>
                {/* Tabs */}
