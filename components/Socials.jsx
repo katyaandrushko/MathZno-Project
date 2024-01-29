@@ -1,12 +1,5 @@
 'use client'
-import {
-   RiYoutubeFill,
-   RiLinkedinFill,
-   RiGithubFill,
-   RiFacebookBoxFill,
-   RiInstagramFill,
-   RiTelegramFill,
-} from 'react-icons/ri'
+import { RiYoutubeFill, RiInstagramFill, RiTelegramFill } from 'react-icons/ri'
 
 import Link from 'next/link'
 

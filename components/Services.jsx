@@ -98,32 +98,22 @@ const Services = () => {
             <div className="grid xl:grid-cols-3 md:grid-cols-2 justify-center gap-y-12 md:gap-x-10 2 xl:gap-y-24 xl:gap-x-8">
                {servicesData.map((item, index) => {
                   return (
-                     <motion.div
+                     <Card
+                        className="f-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
                         key={index}
-                        initial={{ x: index % 2 === 0 ? -70 : 100, opacity: 0 }}
-                        whileInView={{ x: 0, opacity: 1 }}
-                        transition={{ duration: 0.9, type: 'winter' }}
-                        viewport={{ once: true }}
                      >
-                        <Card
-                           className="f-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
-                           key={index}
-                        >
-                           <CardHeader className="text-primary absolute -top-[60px]">
-                              <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
-                                 {item.icon}
-                              </div>
-                           </CardHeader>
-                           <CardContent className="text-center">
-                              <CardTitle className="mb-4">
-                                 {item.title}
-                              </CardTitle>
-                              <CardDescription className="text-lg ">
-                                 {item.description}
-                              </CardDescription>
-                           </CardContent>
-                        </Card>
-                     </motion.div>
+                        <CardHeader className="text-primary absolute -top-[60px]">
+                           <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center">
+                              {item.icon}
+                           </div>
+                        </CardHeader>
+                        <CardContent className="text-center">
+                           <CardTitle className="mb-4">{item.title}</CardTitle>
+                           <CardDescription className="text-lg ">
+                              {item.description}
+                           </CardDescription>
+                        </CardContent>
+                     </Card>
                   )
                })}
             </div>

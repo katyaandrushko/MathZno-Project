@@ -1,5 +1,4 @@
 import DevImg from './DevImg'
-import Image from 'next/image'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
    User2,
@@ -76,43 +75,6 @@ const qualificationData = [
             company: 'Алекс Ленц',
             role: 'Викладач математики',
             years: '2021-2023',
-         },
-      ],
-   },
-]
-
-const skillData = [
-   {
-      title: 'skills',
-      data: [
-         {
-            name: 'HTML CSS',
-         },
-         {
-            name: 'JAVA SCRIPT ',
-         },
-         {
-            name: 'REACT',
-         },
-         {
-            name: 'BACK END ',
-         },
-      ],
-   },
-   {
-      title: 'tools',
-      data: [
-         {
-            imgPath: '/about/vscode.svg',
-         },
-         {
-            imgPath: '/about/figma.svg',
-         },
-         {
-            imgPath: '/about/notion.svg',
-         },
-         {
-            imgPath: '/about/wordpress.svg',
          },
       ],
    },
