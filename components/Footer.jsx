@@ -10,9 +10,6 @@ const Footer = () => {
                   containerStyles="flex gap-x-6 mx-auto xl:mx-0 mb-4"
                   iconsStyles="text-primary text-[20px] transition-all dark:text-white/70 dark:hover:text-primary"
                />
-               <div className="text-muted-foreground">
-                  Copyright &copy; 2024 All Right Reserver
-               </div>
             </div>
          </div>
       </footer>

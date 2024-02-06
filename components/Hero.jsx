@@ -4,12 +4,7 @@ import { Download, Send } from 'lucide-react'
 import DevImg from './DevImg'
 import Socials from './Socials'
 import Badge from './Badge'
-import {
-   RiBriefcase4Fill,
-   RiTeamFill,
-   RiTodoFill,
-   RiArrowDownSLine,
-} from 'react-icons/ri'
+import { RiBriefcase4Fill, RiTeamFill, RiTodoFill } from 'react-icons/ri'
 
 const Hero = () => {
    return (
@@ -79,9 +74,6 @@ const Hero = () => {
                      containerStyles="bg-hero_shape w-[250px] h-[360px] sm:w-[550px] sm:h-[462px] bg-no-repeat relative bg-bottom flex items-center justify-center "
                   />
                </div>
-            </div>
-            <div className="hidden md:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
-               <RiArrowDownSLine className="text-3xl text-primary" />
             </div>
          </div>
       </section>

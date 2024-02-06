@@ -100,7 +100,7 @@ const About = () => {
                {/* Tabs */}
                <div className="items-center flex ">
                   <Tabs defaultValue="personal">
-                     <TabsList className="flex flex-col sm:w-[400px] sm:grid sm:grid-cols-2 xl:grid-cols-2 mx-auto xl:max-w-[520px] xl:border dark:border-none ">
+                     <TabsList className="flex flex-col sm:w-[370px] sm:grid sm:grid-cols-2 xl:grid-cols-2 mx-auto xl:max-w-[520px] xl:border dark:border-none ">
                         <TabsTrigger
                            value="personal"
                            className="w-[175px] xl:w-auto"
@@ -109,16 +109,10 @@ const About = () => {
                         </TabsTrigger>
                         <TabsTrigger
                            value="qualifications"
-                           className="w-[162px] xl:w-auto"
+                           className="w-[175px] xl:w-auto"
                         >
-                           Досвід
+                           Досвід викладання
                         </TabsTrigger>
-                        {/* <TabsTrigger
-                           value="skills"
-                           className="w-[162px] xl:w-auto"
-                        >
-                           Чому я?
-                        </TabsTrigger> */}
                      </TabsList>
 
                      {/* Tabs content */}
@@ -145,30 +139,13 @@ const About = () => {
                               </div>
 
                               <div className="border-b border-border mb-4"></div>
-
-                              {/* ICONS */}
-                              {/* <div className="grid xl:grid-cols-2 gap-4 mb-12">
-                                 {infoData.map((item, index) => {
-                                    return (
-                                       <div
-                                          className="flex items-center gap-x-4 mx-auto xl:mx-0"
-                                          key={index}
-                                       >
-                                          <div className="text-primary">
-                                             {item.icon}
-                                          </div>
-                                          <div>{item.text}</div>
-                                       </div>
-                                    )
-                                 })}
-                              </div> */}
                            </div>
                         </TabsContent>
 
                         {/* Qualifications content */}
                         <TabsContent value="qualifications">
                            <div>
-                              <div className="grid md:grid-cols-2 gap-y-8 ">
+                              <div className="grid sm:grid-cols-2 gap-y-8">
                                  {/* experience  */}
                                  <div className="flex flex-col gap-y-6">
                                     <div className="flex gap-x-4 items-center text-[22px] text-primary">
