@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { Button } from './ui/button'
-import { Download, Send } from 'lucide-react'
+import { MousePointer, User, Wand, ShieldCheck } from 'lucide-react'
 import DevImg from './DevImg'
 import Socials from './Socials'
 import Badge from './Badge'
-import { RiBriefcase4Fill, RiTeamFill, RiTodoFill } from 'react-icons/ri'
+import { RiTeamFill } from 'react-icons/ri'
 
 const Hero = () => {
    return (
@@ -16,8 +16,10 @@ const Hero = () => {
                   <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
                      ЗНО на 200!
                   </div>
-                  <h1 className="h1 pb-6">
-                     Підготую до НМТ на 200 не виходячи з дому
+                  <h1 className="h1 pb-6 max-w-[600px]">
+                     Підготую до НМТ на
+                     <span className="text-orange-500"> 200 </span> не виходячи
+                     з дому
                   </h1>
                   <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
                      Залишай заявку та отримуй безкоштовний пробний урок з
@@ -28,11 +30,11 @@ const Hero = () => {
                   <div className="flex flex-col gap-y-4 md:flex-row  gap-x-3 mx-auto xl:mx-0 mb-12">
                      <Link href="/contact">
                         <Button className="gap-x-2">
-                           Отримати безкоштовний урок <Send size={18} />{' '}
+                           Отримати безкоштовний урок <MousePointer size={18} />{' '}
                         </Button>
                      </Link>
                      <Button variant="secondary" className="gap-x-2">
-                        Звʼязатися зі мною <Download size={18} />{' '}
+                        Звʼязатися зі мною <User size={18} />{' '}
                      </Button>
                   </div>
                   {/* Socials */}
@@ -46,7 +48,7 @@ const Hero = () => {
                   {/* Badge */}
                   <Badge
                      containerStyles="absolute top-[5%] -left-[1rem] sm:absolute sm:top-[24%] sm:-left-[5rem]"
-                     icon={<RiBriefcase4Fill />}
+                     icon={<ShieldCheck />}
                      endCountNum={5}
                      badgeText="років досвіду"
                   />
@@ -54,7 +56,7 @@ const Hero = () => {
                   {/* Badge 2 */}
                   <Badge
                      containerStyles="top-[70%] -left-[2rem] absolute sm:top-[80%] sm:-left-[1rem]"
-                     icon={<RiTodoFill />}
+                     icon={<Wand />}
                      endCountNum={80}
                      endCounttext="%"
                      badgeText="учнів склали на 180+"
@@ -64,8 +66,7 @@ const Hero = () => {
                   <Badge
                      containerStyles="top-[47%] -right-9 absolute sm:top-[55%] sm:-right-8"
                      icon={<RiTeamFill />}
-                     endCountNum={2}
-                     endCounttext="k"
+                     endCountNum={500}
                      badgeText="учнів підготував"
                   />
                   <div className="w-[200px] h-[350px] bg-hero_shape2_light dark:bg-hero_shape2_dark sm:w-[500px] sm:h-[505px] bg-no-repeat absolute -top-1 -right-2 "></div>

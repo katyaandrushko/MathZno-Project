@@ -10,51 +10,24 @@ import {
    Briefcase,
 } from 'lucide-react'
 
-const infoData = [
-   {
-      icon: <User2 size={20} />,
-      text: 'Daniel Breix',
-   },
-   {
-      icon: <PhoneCall size={20} />,
-      text: ' 0661440310',
-   },
-   {
-      icon: <MailIcon size={20} />,
-      text: 'Daniel Breix',
-   },
-   {
-      icon: <Calendar size={20} />,
-      text: 'Daniel Breix',
-   },
-   {
-      icon: <GraduationCapIcon size={20} />,
-      text: 'Daniel Breix',
-   },
-   {
-      icon: <HomeIcon size={20} />,
-      text: 'Daniel Breix',
-   },
-]
-
 const qualificationData = [
    {
       title: 'освіта',
       data: [
          {
             university: 'КПІ',
-            qualification: 'Бакалавр чи магістр',
-            years: '2019-2021',
+            qualification: 'Бакалавр прикладна механіка',
+            years: '2018 - 2021',
          },
          {
-            university: 'Школа...',
-            qualification: 'Закінчив 11 класів з відзнакою',
-            years: '2020-2022',
+            university: 'Коледж з програмування',
+            qualification: 'Підготувався та склав ЗНО на 193',
+            years: '2015 - 2017',
          },
          {
-            university: 'Курси може якісь',
-            qualification: 'Був топовим',
-            years: '2021-2023',
+            university: 'Школа',
+            qualification: 'Написав ДПА з математики на 2 бали',
+            years: '2007 - 2015',
          },
       ],
    },
@@ -62,19 +35,19 @@ const qualificationData = [
       title: 'досвід',
       data: [
          {
-            company: 'Розумскул',
+            company: 'Особисті курси',
+            role: 'Викладач математики',
+            years: '2022 - дотепер',
+         },
+         {
+            company: 'Репетиторство',
+            role: 'Викладач фізики та математики',
+            years: '2018 - 2024',
+         },
+         {
+            company: 'Онлайн школа «Розумскул»',
             role: 'Викладач фізики',
-            years: '2019-2021',
-         },
-         {
-            company: 'Ше шось',
-            role: 'Викладач математики',
-            years: '2020-2022',
-         },
-         {
-            company: 'Алекс Ленц',
-            role: 'Викладач математики',
-            years: '2021-2023',
+            years: '2019 - 2022',
          },
       ],
    },
@@ -85,7 +58,7 @@ const About = () => {
       return arr.find((item) => item.title === title)
    }
    return (
-      <section className="mt-10  xl:mt-[10px] xl:h-[840px] pb-12 xl:py-24">
+      <section className="mt-10 xl:mt-[10px] xl:h-[840px] pb-12 xl:py-24">
          <div className="container mx-auto">
             <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
                Про мене
@@ -98,7 +71,7 @@ const About = () => {
                   />
                </div>
                {/* Tabs */}
-               <div className="items-center flex ">
+               <div className="items-center flex sm:max-w-[590px]">
                   <Tabs defaultValue="personal">
                      <TabsList className="flex flex-col sm:w-[370px] sm:grid sm:grid-cols-2 xl:grid-cols-2 mx-auto xl:max-w-[520px] xl:border dark:border-none ">
                         <TabsTrigger
@@ -148,7 +121,7 @@ const About = () => {
                               <div className="grid sm:grid-cols-2 gap-y-8">
                                  {/* experience  */}
                                  <div className="flex flex-col gap-y-6">
-                                    <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                                    <div className="flex gap-x-4 items-center text-[22px] text-primary justify-center">
                                        <Briefcase />
                                        <h4 className="capitalize font-medium ">
                                           {
@@ -193,7 +166,7 @@ const About = () => {
 
                                  {/* освіта  */}
                                  <div className="flex flex-col gap-y-6">
-                                    <div className="flex gap-x-4 items-center text-[22px] text-primary">
+                                    <div className="flex gap-x-4 items-center text-[22px] text-primary justify-center">
                                        <GraduationCapIcon size={28} />
                                        <h4 className="capitalize font-medium ">
                                           {
